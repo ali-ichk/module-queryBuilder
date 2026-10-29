@@ -106,6 +106,7 @@ if (isActionAccessible($guid, $connection2, '/modules/Query Builder/commands_run
 
     $table->addHeaderAction('favourite', empty($favourite) ? __m('Favourite') : __m('Unfavourite'))
         ->setURL('/modules/Query Builder/queries_favouriteProcess.php')
+        ->directLink()
         ->setIcon('gift')
         ->addParam('search', $search)
         ->addParam('queryBuilderQueryID', $queryBuilderQueryID)
